@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_pcs/materi.dart';
+import 'package:project_pcs/setting.dart';
+import 'package:project_pcs/profil.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({super.key});
@@ -18,10 +21,24 @@ class _BerandaState extends State<Beranda> {
       body: Container(
         child: ListView(
           children: [
-            ElevatedButton(onPressed: (){}, child: Text('Materi')),
-            ElevatedButton(onPressed: (){}, child: Text('Berita')),
-            ElevatedButton(onPressed: (){}, child: Text('Profile')),
-            ElevatedButton(onPressed: (){}, child: Text('Pengaturan')),
+            ElevatedButton(onPressed: (){
+              
+                  Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Materi()));
+            }, child: Text('Materi')),
+            ElevatedButton(onPressed: (){
+              
+            }, child: Text('Berita')),
+            ElevatedButton(onPressed: (){
+              
+                  Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profil()));
+            }, child: Text('Profile')),
+            ElevatedButton(onPressed: (){
+              
+                  Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Setting()));
+            }, child: Text('Pengaturan')),
           ],
         )
       ));
