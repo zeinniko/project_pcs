@@ -28,7 +28,9 @@ class _BerandaState extends State<Beranda> {
             }, child: Text('Materi')),
             ElevatedButton(onPressed: (){
               
-            }, child: Text('Berita')),
+                  Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Materi()));
+            }, child: Text('Tambah materi')),
             ElevatedButton(onPressed: (){
               
                   Navigator.push(context,
