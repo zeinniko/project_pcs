@@ -3,12 +3,12 @@ import 'dart:async';
 
 import 'package:project_pcs/beranda.dart';
 
-class Intro extends StatefulWidget {
+class Loading extends StatefulWidget {
   @override
-  _IntroState createState() => _IntroState();
+  _LoadingState createState() => _LoadingState();
 }
 
-class _IntroState extends State<Intro> {
+class _LoadingState extends State<Loading> {
   @override
   void initState() {
     super.initState();

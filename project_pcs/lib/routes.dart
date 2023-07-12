@@ -7,10 +7,10 @@ class Routes {
     switch (settings.name) {
       case home:
         return MaterialPageRoute(builder: (context) => Beranda());
-      case intro:
-        return MaterialPageRoute(builder: (context) => Intro());
-      case login:
-        return MaterialPageRoute(builder: (context) => Login());
+      // case intro:
+      //   return MaterialPageRoute(builder: (context) => Intro());
+      // case login:
+      //   return MaterialPageRoute(builder: (context) => Login());
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(
